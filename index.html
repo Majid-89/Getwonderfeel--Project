@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wonderfeel NMN | The Greatest Upgrade for the Human OS</title>
+
+    <!------- Tailwind-Cdn-Link ------->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!------- FontAwesome-Cdn-Link ------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/regular.min.css"
         integrity="sha512-KYEnM30Gjf5tMbgsrQJsR0FSpufP9S4EiAYi168MvTjK6E83x3r6PTvLPlXYX350/doBXmTFUEnJr/nCsDovuw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!------- AOS-Cdn-Link ------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -123,7 +127,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div class="relative z-0 my-40 text-end w-[90%] mx-auto">
             <p class="font-semibold text-2xl text-[#707070] py-3">Backed by the latest human clinical trial with</p>
             <h2 class="text-4xl text-[#4D4D4D] font-bold py-3 leading-10">900 mg NMN in just two capsules</h2>
@@ -200,7 +204,7 @@
             </div>
         </div>
     </section>
-    <section class="py-14 bg-white sm:py-16 lg:py-24 z-40 relative ">
+    <section class="py-14 bg-white sm:py-16 lg:py-24  relative z-40">
         <div class="">
             <div class="max-w-[1400px] mx-auto w-[90%]">
                 <div class=" grid grid-cols-1 lg:grid-cols-4 rounded-2xl overflow-hidden bg-center bg-cover " style=" background-image: url(./assets/Images/homePageImages/Product-Highlights-Wonderfeel-Youngr-NMN.jpg);
@@ -330,10 +334,10 @@
 
 
     <section class="py-20 relative z-40 bg-white">
-        <h2 class="text-3xl text-center text-[#4D4D4D] font-bold py-3 leading-10">Youngr™​ <br>
-            Enjoy the benefits of everyday use
-        </h2>
-        <div class="w-[75%] mx-auto">
+        <div class="w-[75%] max-w-[1400px]  mx-auto">
+            <h2 class="text-3xl text-center text-[#4D4D4D] font-bold py-3 leading-10">Youngr™​ <br>
+                Enjoy the benefits of everyday use
+            </h2>
 
             <!---------- FirstRow---------->
 
@@ -351,7 +355,7 @@
                         your body makes, the better, and it’s abundant in our youth.
                     </p>
                 </div>
-                <div class="">
+                <div class="" data-aos="fade-left">
                     <img class=" h-[300px] w-[500px] object-cover obe rounded-3xl rotate-12"
                         src="./assets/Images/homePageImages/FirstRowImage-01.jpg" alt="">
                 </div>
@@ -381,7 +385,7 @@
             <!---------- ThirdRow---------->
 
             <div class="py-28 flex justify-between">
-                <div class="flex justify-center">
+                <div data-aos="slide-right" class=" flex justify-center">
                     <img class="rounded-3xl w-[670px] h-[240px]"
                         src="./assets/Images/homePageImages/ThirstRowImage-02.jpg" alt="">
                 </div>
@@ -404,7 +408,7 @@
 
             <div class="py-28 flex justify-between">
                 <div class="">
-                    <div class="">
+                    <div>
                         <img class="w-20" src="./assets/Images/homePageImages/FourthRowIcon.svg" alt="">
                     </div>
                     <h2 class="text-4xl text-[#4D4D4D] font-bold py-8 leading-[50px]">
@@ -416,7 +420,7 @@
                         function better, and recover faster from whatever your lifestyle demands.
                     </p>
                 </div>
-                <div class="">
+                <div data-aos="fade-left" class="">
                     <img class=" h-[300px] w-[500px] object-cover obe rounded-3xl rotate-12"
                         src="./assets/Images/homePageImages/FouthRowImage.jpg" alt="">
                 </div>
@@ -446,6 +450,16 @@
             </div>
         </div>
     </section>
+
+
+    <!------- AOS-Cdn-Links ------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 900,
+        });
+    </script>
 </body>
 
 </html>
