@@ -33,15 +33,21 @@
 
 <body style="font-family: 'Ubuntu', sans-serif; scroll-behavior: smooth; ">
 
-    <!------- Header-section ------->
 
-    <Nav class="bg-[#0095B9] " id="Nav">
+
+    <!------- Header-section ------->
+    <Nav class="bg-[#0095B9]" id="Nav">
         <div class="text-white flex justify-between items-center py-4 max-container mx-auto w-[90%]">
-            <div class="flex justify-center items-center">
+            <div class="flex justify-center items-center gap-4">
+                <div
+                    class="visible lg:hidden text-4xl cursor-pointer transition-all duration-300 hover:text-yellow-400">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </div>
                 <div class="logo">
                     <a href="/index.html"><img src="./assets/Images/homePageImages/logo.svg" class="w-24 " alt=""></a>
                 </div>
-                <ul class="flex justify-center items-center gap-x-16 ml-11 cursor-pointer transition-all duration-500">
+                <ul
+                    class="hidden lg:flex justify-center items-center gap-x-16 ml-11 cursor-pointer transition-all duration-500">
                     <li class="text-[#FFC60B] "><a href="/index.html">Home</a></li>
                     <div class="group">
                         <div class="flex justify-center items-center gap-3">
@@ -75,7 +81,7 @@
             </div>
             <div class="cursor-pointer flex gap-5">
                 <div class="group relative cursor-pointer py-2">
-                    <div class="bg-[#30A9C6] flex justify-center items-center px-2 gap-2 rounded">
+                    <div class="bg-[#30A9C6] hidden lg:flex justify-center items-center px-2 gap-2 rounded">
                         <a class="text-base font-medium text-white group-hover:text-[#FFC60B] ">
                             EN
                         </a>
@@ -111,7 +117,7 @@
                     </svg>
                     <span
                         class="absolute top-[-12px] right-[-8px] bg-yellow-400 w-4 rounded-full flex justify-center items-center">
-                        <span class="font-thin text-xs">0 </span>
+                        <span class="font-thin text-xs">0</span>
                     </span>
                 </span>
             </div>
@@ -573,7 +579,7 @@
     <!------- ScrollToTop-Icon ------->
     <a href="#Nav">
         <div
-            class="bg-[#FFC60B] flex justify-center items-center w-14 h-14 cursor-pointer fixed z-50 bottom-16 rounded-lg -rotate-90 right-[-5px]">
+            class="bg-[#FFC60B] flex justify-center items-center w-14 h-14 cursor-pointer fixed z-50 bottom-16 rounded-lg -rotate-90 right-[5px]">
             <span class="text-4xl text-white "><i class="fa-solid fa-angle-right"></i></span>
         </div>
     </a>
